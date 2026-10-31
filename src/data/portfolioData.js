@@ -12,10 +12,7 @@ export const personalInfo = {
   email: "gopal32452@gmail.com",
 };
 
-export const academy = {
-  name: "TAP Academy",
-  url: "https://thetapacademy.com/",
-};
+// academy export removed
 
 export const socialLinks = {
   instagram: "",
@@ -33,7 +30,7 @@ export const aboutContent = {
   heading: "Intro",
   greeting: "Hey, I'm Gopal.",
   paragraph:
-    "I'm a Full-Stack AI Developer and B.Tech CSE student at Lovely Professional University, focused on building production-oriented web applications and intelligent software systems. I work across React, Node.js, Python, FastAPI, databases, and AI integrations to turn real-world ideas into complete products — sharpening my skills through the placement training program at TAP Academy.",
+    "I'm a Full-Stack AI Developer and B.Tech CSE student at Lovely Professional University, focused on building production-oriented web applications and intelligent software systems. I work across React, Node.js, Python, FastAPI, databases, and AI integrations to turn real-world ideas into complete products.",
   highlights: ["React", "Node.js", "Python", "FastAPI", "AI Agents", "MongoDB"],
 };
 
@@ -104,6 +101,8 @@ export const projectsContent = {
   items: [
     {
       id: "project-1",
+      imageName: "devagent-cover",
+      altText: "DevAgent AI software engineering platform",
       number: "01",
       title: ["DEVAGENT *ai*", "ORCHESTRATION PLATFORM"],
       description:
@@ -113,6 +112,8 @@ export const projectsContent = {
     },
     {
       id: "project-2",
+      imageName: "hireai-cover",
+      altText: "HireAI job and career platform",
       number: "02",
       title: ["HIREAI", "JOB & CAREER PLATFORM"],
       description:
@@ -122,6 +123,8 @@ export const projectsContent = {
     },
     {
       id: "project-3",
+      imageName: "jarvis-cover",
+      altText: "JARVIS AI voice assistant",
       number: "03",
       title: ["JARVIS *ai*", "VOICE ASSISTANT"],
       description:
@@ -131,6 +134,8 @@ export const projectsContent = {
     },
     {
       id: "project-4",
+      imageName: "building-material-cover",
+      altText: "Building Material Supplier website",
       number: "04",
       title: ["BUILDING MATERIAL", "SUPPLIER"],
       description:

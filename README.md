@@ -36,7 +36,3 @@ If these variables are not configured or retain their placeholder values, the co
 
 - **Lovely Professional University**
 - B.Tech Computer Science & Engineering
-
-### Credit
-
-Built during the placement training program at [TAP Academy](https://thetapacademy.com/) (full-stack development, AI and augmented reality training).

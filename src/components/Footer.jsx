@@ -2,7 +2,6 @@ import {
   personalInfo,
   socialLinks,
   footerContent,
-  academy,
 } from '../data/portfolioData'
 
 // Load footer background image with graceful fallback
@@ -124,22 +123,10 @@ function Footer() {
 
         {/* ── BOTTOM ROW ── */}
         <div className="max-w-[1400px] w-full mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs text-[#9CA3AF]/60">
-          {/* Left: Copyright + TAP Academy credit */}
+          {/* Left: Copyright */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
             <span>
               © {currentYear} {personalInfo.name}. All Rights Reserved.
-            </span>
-            <span className="hidden sm:inline text-[#9CA3AF]/30">·</span>
-            <span>
-              Trained at{' '}
-              <a
-                href={academy.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-2 hover:text-white/60 transition-colors duration-200"
-              >
-                {academy.name}
-              </a>
             </span>
           </div>
 

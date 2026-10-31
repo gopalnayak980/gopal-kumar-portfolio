@@ -11,11 +11,19 @@ const projectImages = import.meta.glob('../assets/projects/*.{png,jpg,jpeg,webp,
   import: 'default',
 })
 
-// Helper to find matching image file for a given project id
-const getProjectImage = (id) => {
-  const matchKey = Object.keys(projectImages).find((path) =>
-    path.toLowerCase().includes(`/${id.toLowerCase()}.`)
-  )
+// Helper to find matching image file for a given project item
+const getProjectImage = (project) => {
+  const targetNames = [
+    project.imageName,
+    project.id,
+  ]
+    .filter(Boolean)
+    .map((name) => name.toLowerCase())
+
+  const matchKey = Object.keys(projectImages).find((path) => {
+    const lowerPath = path.toLowerCase()
+    return targetNames.some((name) => lowerPath.includes(`/${name}.`))
+  })
   return matchKey ? projectImages[matchKey] : null
 }
 
@@ -157,7 +165,7 @@ function Projects({ onCtaClick = () => {} }) {
         <div className="flex flex-col gap-24 md:gap-40 mt-20 md:mt-32">
           {projectsContent.items.map((project, index) => {
             const isImageLeft = index % 2 === 0
-            const imgSrc = getProjectImage(project.id)
+            const imgSrc = getProjectImage(project)
 
             return (
               <article
@@ -197,7 +205,7 @@ function Projects({ onCtaClick = () => {} }) {
                     {imgSrc ? (
                       <img
                         src={imgSrc}
-                        alt={project.title.join(' ')}
+                        alt={project.altText || project.title.join(' ')}
                         loading="lazy"
                         className="w-full h-full object-cover opacity-90 transition-all duration-700 ease-out group-hover:scale-105 group-hover:opacity-100"
                       />
