@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif-accent: 'Playfair Display', Georgia, serif;
+  --color-lime: #CCFF00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050505;
+  color: #fff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Seamless skills ticker keyframes */
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.marquee-left {
+  animation: marquee-left 40s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-right 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-left,
+  .marquee-right {
+    animation: none;
+  }
+}
