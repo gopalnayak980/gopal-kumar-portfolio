@@ -1,16 +1,42 @@
-# React + Vite
+# Gopal Kumar — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+B.Tech Computer Science & Engineering student at Lovely Professional University and Full-Stack Developer focused on MERN + AI integrations.
 
-Currently, two official plugins are available:
+### Live site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[https://gopalnayak980.github.io/gopal-portfolio/](https://gopalnayak980.github.io/gopal-portfolio/)
 
-## React Compiler
+### Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Tailwind CSS 4
+- GSAP + ScrollTrigger
+- EmailJS (@emailjs/browser)
 
-## Expanding the Oxlint configuration
+### Run locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm install
+npm run dev
+npm run build
+```
+
+### Environment Variables
+
+Configure these variables in `.env.local` to enable direct contact form submission via EmailJS:
+
+- `VITE_EMAILJS_SERVICE_ID`
+- `VITE_EMAILJS_TEMPLATE_ID`
+- `VITE_EMAILJS_PUBLIC_KEY`
+
+If these variables are not configured or retain their placeholder values, the contact form automatically falls back to opening the visitor's default email client (`mailto:`) with prefilled subject and body text.
+
+### Education
+
+- **Lovely Professional University**
+- B.Tech Computer Science & Engineering
+
+### Credit
+
+Built during the placement training program at [TAP Academy](https://thetapacademy.com/) (full-stack development, AI and augmented reality training).

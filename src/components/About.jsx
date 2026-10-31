@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { personalInfo, aboutContent, skillRows } from '../data/portfolioData'
+import { aboutContent, skillRows } from '../data/portfolioData'
 
 // Register ScrollTrigger once with GSAP
 gsap.registerPlugin(ScrollTrigger)
@@ -109,7 +109,7 @@ function About() {
             {aboutImageSrc ? (
               <img
                 src={aboutImageSrc}
-                alt={`${personalInfo.name} — portrait`}
+                alt="Gopal Kumar — Full-Stack AI Developer, B.Tech CSE at Lovely Professional University"
                 className="w-[190px] sm:w-[220px] lg:w-[260px] h-auto object-contain"
                 style={{ filter: 'drop-shadow(0 30px 50px rgba(0,0,0,0.7))' }}
               />

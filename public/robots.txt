@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gopalnayak980.github.io/gopal-portfolio/sitemap.xml
